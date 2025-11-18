@@ -2,8 +2,11 @@
 #1. Construye una lista que funcione como un conjunto (set). 
 # Esto es, construye una función a la que le pasas una lista y un elemento que agregar 
 lista = [{'1':'uno','2':'dos','3':'tres'}] #lista inicial
+### aquí hiciste una lista cuyo elemento es un diccionario, el ejercicio pide una lista que funcione como diccionario
+### no necesitas pasar llaves a la función, sólo valores
 def agregar_a_conjunto(valor, llave):#se define función
     if valor not in lista: #si el valor no está en la lista
+        ### aquí estás agregando un diccionario nuevo y sólo queremos meter los valores
         lista.append({llave:valor}) #se agrega el valor con su llave mediante append
     return lista #regresa la lista actualizada
 print(agregar_a_conjunto('cuatro','4')) #se imprime el resultado de la función
@@ -23,6 +26,7 @@ print(agregar_o_sobreescribir('cinco','2')) #se imprime el resultado de la funci
 #2. Construye dos listas que funcionen juntas como un diccionario. Por ejemplo, simular el diccionario
 d=['uno', 'dos', 'tercero'] #lista de llaves
 d2=['1', '2', '3'] #lista de valores
+### falta hacer la función de agregar valores
 def obtener_valor(llave): #se define función
     if llave in d: #si la llave está en la lista de llaves
         indice = d.index(llave) #se obtiene el índice de la llave
@@ -55,4 +59,5 @@ def convertir_a_oxitocina(secuencia): #se define función
         else:
             resultado.append('X') #si el codón no está en el diccionario, agrega 'X' para indicar un codón desconocido
     return '-'.join(resultado) #regresa la proteína resultante como una cadena separada por guiones
+
 print(convertir_a_oxitocina('AUGUGUUACAUCCAGAAUUGCCCUCUUGGUUGA')) 
