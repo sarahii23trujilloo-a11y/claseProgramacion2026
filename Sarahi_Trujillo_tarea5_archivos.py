@@ -38,6 +38,7 @@ def complement(seq):
             'a':'t', 't':'a', 'c':'g', 'g':'c'}
     return ''.join(comp.get(base, base) for base in seq)
 
+### al correr tu código, imprime el complemento de todas las líneas, no sólo la primera
 with open("phytophtora.fasta", "r") as f:
     print_next_seq = False
     for line in f:
@@ -74,3 +75,4 @@ def gc_total(fasta_path):
     gc_content = gc_count / total_count if total_count > 0 else 0
     print(f"GC total del archivo: {round(gc_content, 2)}")
 gc_total("phytophtora.fasta")
+
