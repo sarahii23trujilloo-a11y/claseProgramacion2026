@@ -7,6 +7,7 @@
 #Input: un string
 #Output: Booleano indicando si el string se compone de puros números
 numeros= "1234"
+### el chiste de usar funciones es que sólo hay que definirlas una vez y usarlas varias veces
 def MiEsDigito (numeros):
     return numeros.isdigit()
 print(numeros.isdigit())
@@ -30,6 +31,8 @@ print(numbers.isdigit())
 #Output: un entero con el número de veces que aparece el segundo string en el primer string
 #a
 strings= ("hola mundo", "o")
+### estás haciendo trampa y en cada definición de la función poniendo el conteo total, tu función no sirve
+### debes hacer una sola función "mi_conteo" que jale para todos los casos, no una para cada letra
 def mi_conteo_o (strings):
     texto, caracter= strings
     conteo= 2
@@ -183,6 +186,8 @@ def EsPar (numero):
     if numero % 2 == 0:
         print(f"El número {numero} es par")
         return True
+### está incompleta, qué pasa cuando el número es impar?
 print(EsPar(4)) 
+
 
 
