@@ -19,24 +19,12 @@ print(lista2)
 #3. Hacer un programa que imprima (4 puntos)
 for x in range(1,11):
     print("*" * x)
-#*
-#**
-#***
-#****
-#*****
-#******
-#*******
-#********
-#*********
-#**********
-
-
 #4. Investigar cómo se usa un ciclo while y hacer un programa que imprima los números del 1 al 10. (2 puntos)
 
 contador=1
 while contador <=10:
     print(contador)
-    contador=contador+1 
+        contador=contador+1 
 #aqui al uno se le va sumando uno hasta llegar al 10 porque se vuelve falso si es mayor de 10 
 contadors=11
 while contadors >=10:
@@ -81,7 +69,7 @@ citosinas= "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
 timinas= "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
 guaninas=  "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
 listaDeNucleótidos= ["adeninas","citosinas","timinas","guaninas"]
-for element in listaDeNucleótidos:
+fors element in listaDeNucleótidos:
     if element is "A":
         "A"=="A"+ "A"
         print(adeninas)
