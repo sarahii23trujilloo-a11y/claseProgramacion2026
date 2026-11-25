@@ -24,7 +24,7 @@ for x in range(1,11):
 contador=1
 while contador <=10:
     print(contador)
-        contador=contador+1 
+    contador=contador+1 
 #aqui al uno se le va sumando uno hasta llegar al 10 porque se vuelve falso si es mayor de 10 
 contadors=11
 while contadors >=10:
@@ -69,10 +69,13 @@ citosinas= "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
 timinas= "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
 guaninas=  "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
 listaDeNucleótidos= ["adeninas","citosinas","timinas","guaninas"]
-fors element in listaDeNucleótidos:
-    if element is "A":
+for element in listaDeNucleótidos:
+    if element == "A":
         "A"=="A"+ "A"
         print(adeninas)
+
+
+
 
 
 
