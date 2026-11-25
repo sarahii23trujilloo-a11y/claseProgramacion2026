@@ -22,12 +22,16 @@ for x in range (70,80):
        print(x) 
 #4. Programar el método find de los strings a mano. (2 puntos) Sugerencia: utilizar break cuando encuentren lo que buscan
 palabra = 'banana'
-for letra in palabra: 
-    if letra=="a":
-        print(2)
-        break
-    print(letra)
-# regresar la posición de la primera 'a'
+
+def buscar(texto, objetivo):
+    posicion = 0
+    for letra in texto:
+        if letra == objetivo:
+            return posicion
+        posicion += 1
+    return -1
+
+print(buscar(palabra, 'a'))  # Imprime 1, la posición de la primera 'a'
 
 #5. Imprimir todos los números de la siguiente lista utilizando ciclos: (4 puntos)
 lista = [ [1], [1,2], [1,2,3], [1,2,3,4], [1,2,3,4,5] ]
