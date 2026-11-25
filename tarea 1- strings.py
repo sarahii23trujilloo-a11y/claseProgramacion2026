@@ -66,7 +66,7 @@ oraciónlarga = 'hola mundo'
 palabr = 'hola' 'mundo' 
 print(oración larga)
 print(palabr)
-#la segunda no imprime nada porque se debe de poner comillas o guion bajo 
+#la segunda dira error de sintaxis y no va a imprimir nada porque se debe de poner comillas o guion bajo 
 palabras= "hola"" ""mundo"
 print(palabras)
 #6. Investigar "fstring": qué son, cómo se usan y un ejemplo. (2.5 puntos)
