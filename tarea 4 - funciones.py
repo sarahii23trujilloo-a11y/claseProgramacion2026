@@ -53,7 +53,7 @@ def GCcontent (d):
     longitud_total = len(d)
     if longitud_total==0:
         return 0.0
-    for letra in d: 
+    for letra in d.upper():
         if letra== "G" or letra =="C":
             conteo_gc += 1
     porcentaje= (conteo_gc/longitud_total)
@@ -75,6 +75,7 @@ print(GCcontent("GGCC"))
 #4. MiSwapCase
 def MiSwapCase (p):
     return p.swapcase()
+# Esta prueba comprueba que las minúsculas pasan a mayúsculas y viceversa.
 print(MiSwapCase("LaPtoP"))
 #Input: un string
 #Output: un string que invierta las mayúsculas y minúsculas
@@ -83,19 +84,22 @@ print(MiSwapCase("LaPtoP"))
 #5. MiCapitalize
 def MiCapitalize (word):
      return word.capitalize()
+# Esta prueba comprueba que la primera letra quede en mayúscula.
 print(MiCapitalize ("unam"))
 #Input: un string
 #Output: un string que tenga la primera letra en mayúsculas
 
 #(2 puntos)
 #6. EsPar
-def EsPArono (ent):
-    for x in range (0,100): #como le digo a python que tome en cuenta todos los enteros
-        if ent== 2*x +1:
-         return "es impar"
-        if ent== 2*x:
-         return "es par"
-print(EsPArono(4))
-print(EsPArono(5))
+def EsPar(ent):
+    if ent % 2 == 0:
+        print("es par")
+    else:
+        print("es impar")
+# Estas pruebas comprueban números pares, impares y valores fuera de un rango pequeño.
+EsPar(4)
+EsPar(5)
+EsPar(-3)
+EsPar(500)
 #Input: Un número entero
 #Output: Imprime si el número es par o impar, no debe regresar nada
