@@ -64,10 +64,9 @@ print("g" +"4"+"tos")
 #5. Qué problema tiene declarar estas variables? (1.5 puntos)
 oraciónlarga = 'hola mundo'
 palabr = 'hola' 'mundo' 
-print(oraciónlarga)
+print(oración larga)
 print(palabr)
-#my theory before to run this program is that the problem is that there are several spaces that arent right regarding the syntaxis for the declaration of a variable, but when I run the program it works without any problem, so I think that there is no problem with the declaration of these variables, but if we want to concatenate the two variables we can do it like this:
-#we didn´t have any problem but if we want the second value with space we need to add the " " at the end of the first value
+#la segunda no imprime nada porque se debe de poner comillas o guion bajo 
 palabras= "hola"" ""mundo"
 print(palabras)
 #6. Investigar "fstring": qué son, cómo se usan y un ejemplo. (2.5 puntos)
